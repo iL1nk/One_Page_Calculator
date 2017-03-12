@@ -1,0 +1,759 @@
+	.calc_clear {
+		clear: both;
+	}
+
+	.calc_hide, #calc_new_a2_wrapper.calc_open .new-lightbox.cover-calculator .calc_hide {
+		display: none !important;
+	}
+
+	body.modal-open {
+		overflow-x: hidden;
+		overflow-y: visible;
+	}
+	
+	.messaging.Calculator {
+		display: none;
+	}
+
+	#calc_coverCalculatorSubmit {
+		/*display: none;*/
+		text-transform: none;
+		text-align: center;
+	}
+
+	#calc_new_a2_wrapper .cover-calculator-next.calc_results {
+		text-align: center;
+		margin-top: 0;
+	}
+
+	.new-lightbox #callback-form-close-cross {
+		display: none;
+	}
+
+	#calc_new_a2_wrapper {
+		border-bottom: 1px solid #4166a4;
+		margin-bottom: 20px;
+		padding-bottom: 20px;
+		padding-top: 5px;
+		width: 70%;
+	}
+
+	#calc_new_a2_wrapper .cover-calculator-results {
+		display: none;
+	}
+
+	#calc_new_a2_wrapper.calc_open #calc_new_a2_signpost {
+		border-bottom: none;
+		border-bottom-right-radius: 0;
+		border-bottom-left-radius: 0;
+	}
+
+	#calc_new_a2_wrapper #calc_new_a2_signpost {
+		background-color: #1E295A;
+		border-radius: 6px;
+		border: 2px solid #88A6D7;
+		cursor: pointer;
+		height: 62px;
+		padding: 0 6%;
+		position: relative;
+	}
+
+	#calc_new_a2_wrapper #calc_new_a2_signpost #calc_new_calc {
+		background-image: url("#$(ContentManager:calc.png)!");
+		background-repeat: no-repeat;
+		height: 31px;
+		position: absolute;
+		top: 15px;
+		width: 24px;
+	}
+
+	#calc_new_a2_wrapper #calc_new_a2_signpost #calc_new_chevron {
+		background-image: url("#$(ContentManager:chevron.png)!");
+		background-position: 0 -14px;
+		background-repeat: no-repeat;
+		height: 14px;
+		position: absolute;
+		right: 6%;
+		top: 26px;
+		width: 25px;
+	}
+
+	#calc_new_a2_wrapper.calc_open #calc_new_a2_signpost #calc_new_chevron {
+		background-position: 0 0;
+	}
+
+	#calc_new_a2_wrapper #calc_new_a2_signpost #calc_new_bottom_line {
+		display: none;
+	}
+
+	#calc_new_a2_wrapper .calc_new_box {
+		background-color: #1E295A;
+		border-radius: none;
+		border-top: none;
+		border-left: 2px solid #88A6D7;
+		border-right: 2px solid #88A6D7;
+		border-bottom: none;
+		display: none;
+		text-align: center;
+	}
+
+	.calc_new_button.disabled.button {
+		background-color: #1E4348;
+		background-image: -moz-linear-gradient(center top, #234A4C, #183A45);
+		background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#234A4C), to(#183A45));
+		background-image: -ms-linear-gradient(top, #234A4C 0%, #183A45 100%);
+		background-image: linear-gradient(#234A4C, #183A45);
+		color: #8FA2A4;
+	}
+
+	.calc_new_button.enabled.button {
+		background-image: -moz-linear-gradient(center top, #056903, #2AA31B);
+		background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#056903), to(#2AA31B));
+		background-image: -ms-linear-gradient(top, #056903 0%, #2AA31B 100%);
+		background-image: linear-gradient(#056903, #2AA31B);
+	}
+
+	.calc_new_button.enabled.button:hover, .calc_new_button.enabled.button:focus {
+		background-color: #31AE20;
+		background-image: -moz-linear-gradient(center top, #007c00, #4ac739);
+		background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#007c00), to(#4ac739));
+		background-image: -ms-linear-gradient(top, #007c00 0%, #4ac739 100%);
+		background-image: linear-gradient(#007c00, #4ac739);
+	}
+
+	#calc_new_a2_wrapper.calc_open .cover-calculator-next .calc_new_button.button {
+		box-shadow: 4px 4px 4px 0.00px rgba(0, 0, 0, 0.3);
+		width: auto;
+		text-transform: none;
+		padding: 8px 23px;
+		margin-top: 20px;
+	}
+
+	#calc_new_a2_wrapper.calc_open .cover-calculator-next {
+		position: relative;
+	}
+
+	#calc_new_back_button {
+		position: absolute;
+		left: 0;
+		top: 17px;
+		color: #108A00;
+		background-color: #D4D4D5;
+		background-image: -moz-linear-gradient(center top, #B8B8B9, #EEEEEE);
+		background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#B8B8B9), to(#EEEEEE));
+		background-image: -ms-linear-gradient(top, #B8B8B9 0%, #EEEEEE 100%);
+		background-image: linear-gradient(#B8B8B9, #EEEEEE);
+	}
+
+	#calc_new_back_button:hover {
+		background-color: #FFFFFF;
+	}
+
+	#calc_new_a2_wrapper.calc_open #calc_new_a2_signpost #calc_new_bottom_line {
+		display: block;
+		border-bottom: 1px solid #283261;
+	}
+
+	#calc_new_a2_wrapper #calc_new_text {
+		font-size: 22px;
+		font-weight: 700;
+		line-height: 60px;
+		margin-left: 45px;
+	}
+
+	#calc_new_a2_wrapper .new-lightbox.cover-calculator.ng-scope {
+		display: none;
+		padding: 0;
+	}
+
+	#calc_new_a2_wrapper.calc_open .new-lightbox.cover-calculator.ng-scope {
+		display: block;
+	}
+
+
+	#calc_new_a2_wrapper.calc_open .new-lightbox.cover-calculator {
+		background-color: #1E295A;
+		background-image: none;
+		/*border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;*/
+		border-bottom: none;
+	}
+
+	#calc_new_a2_wrapper.calc_open .new-lightbox .lightbox-inner {
+		border: 2px solid #88A6D7;
+		border-bottom-left-radius: 6px;
+		border-bottom-right-radius: 6px;
+		border-top-left-radius: 0;
+		border-top-right-radius: 0;
+		border-top: none;
+		padding: 10px 6%;
+	}
+
+	#calc_new_a2_wrapper.calc_open .cover-calculator.ng-scope .instruction .answer {
+		width: 30%;
+	}
+
+	#calc_new_a2_wrapper.calc_open .cover-calculator.ng-scope .instruction .calc_question_example .answer {
+		width: 15%;
+		overflow: visible;
+	}
+
+	#calc_new_a2_wrapper.calc_open .lightbox-inner .instruction {
+		background-color: #1D478B;
+		border-radius: 6px;
+		border: none;
+		padding: 25px 3%;
+	}
+
+	#calc_new_a2_wrapper.calc_open .calc_second_question {
+		display: inline-block;
+		width: 100%;
+		border-top: 1px solid #94B3E7;
+		margin-top: 20px;
+		padding-top: 13px;
+	}
+
+	.calc_second_question .calc_sq_text {
+		display: inline;
+		font-size: 0.87em;
+	}
+
+	.calc_second_question .calc_green_text {
+		color: #B8EB85;
+	}
+
+	#calc_new_a2_wrapper.calc_open .instruction .inputs {
+		background-color: #1E295A;
+		border-color: #1E295A;
+		border-radius: 6px;
+		color: #1E468C;
+		font-size: 1.85em;
+		font-weight: normal;
+		padding-left: 14px;
+	}
+
+	#calc_new_a2_wrapper.calc_open .instruction .inputs.ng-valid {
+		background-color: #1E295A !important;
+		border-color: #1E295A !important;
+		color: #FFFFFF !important;
+	}
+
+	#calc_new_a2_wrapper.calc_open .instruction .inputs:focus {
+		border-color: #FFFFFF !important;
+		box-shadow: 0 0 0px 0px #FFFFFF !important;
+	}
+
+	#calc_new_a2_wrapper.calc_open .legacy .pound {
+		color: #FFFFFF !important;
+		font-size: 1.85em;
+		font-weight: normal;
+		top: 7px;
+		margin-left: 5px;
+	}
+
+	#calc_new_a2_wrapper.calc_open .new-lightbox .lightbox-inner h1 {
+		display: none;
+	}
+
+	#calc_new_a2_wrapper.calc_open .new-lightbox .question {
+		font-size: 0.94em;
+		width: 63%;
+	}
+
+	#calc_new_a2_wrapper.calc_open #calc_new_choose_box {
+		display: block;
+		padding: 10px 6%;
+	}
+
+	#calc_new_choose_box #calc_new_box_header {
+		font-size: 20px;
+		font-weight: 700;
+		line-height: 24px;
+	}
+
+	#calc_new_choose_box #calc_new_sub_header {
+		font-size: 16px;
+	}
+
+	#calc_new_choose_box #calc_new_proposals {
+		padding: 10px 0;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		-webkit-user-select: none;
+		-webkit-touch-callout: none;
+	}
+
+	#calc_new_proposals .calc_new_columns {
+		background: #FFFFFF;
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		border: 1px solid #CCCCCC;
+		border-radius: 6px;
+		display: inline-block;
+		height: 85px;
+		margin-right: 2%;
+		margin-top: 10px;
+		margin-bottom: 55px;
+		width: 186px;
+		cursor: pointer;
+	}
+
+	#calc_new_proposals .calc_new_columns:hover {
+		border: 1px solid #0F8900;
+	}
+
+	#calc_new_proposals #calc_new_mortgage {
+		background-image: url("#$(ContentManager:mortgage-icon.png)!");
+	}
+
+	#calc_new_proposals #calc_new_lumpsum {
+		background-image: url("#$(ContentManager:dependants-icon.png)!");
+	}
+
+	#calc_new_proposals #calc_new_loans {
+		background-image: url("#$(ContentManager:debt-icon.png)!");
+	}
+
+	#calc_new_proposals #calc_new_mortgage.calc_selected {
+		background-image: url("#$(ContentManager:mortgage-icon-selected.png)!");
+	}
+
+	#calc_new_proposals #calc_new_lumpsum.calc_selected {
+		background-image: url("#$(ContentManager:dependants-icon-selected.png)!");
+	}
+
+	#calc_new_proposals #calc_new_loans.calc_selected {
+		background-image: url("#$(ContentManager:debt-icon-selected.png)!");
+	}
+
+	#calc_new_proposals .calc_selected {
+		background-color: #0F8900;
+		border: 1px solid #0F8900;
+	}
+
+	#calc_new_proposals .calc_selected:hover {
+		background-color: #0F8900;
+		border: 1px solid #FFFFFF;
+	}
+
+	#calc_new_proposals .calc_new_columns:last-child {
+		margin-right: 0;
+	}
+
+	#calc_new_proposals .calc_new_subtext {
+		display: table;
+		height: 60px;
+		margin-top: 100px;
+	}
+
+	#calc_new_a2_wrapper #calc_new_breadcrumbs {
+		display: block;
+		border-bottom: none;
+		border-radius: 0;
+		padding: 17px 6% 43px;
+		position: relative;
+	}
+
+	#calc_new_breadcrumbs .new_text-right {
+		text-align: -webkit-right;
+		text-align: right;
+	}
+
+	#calc_new_breadcrumbs #calc_new_bc_line {
+		background-color: #cdcdcd;
+		height: 5px;
+		margin-top: 3px;
+	}
+
+	#calc_new_bc_green {
+		background-color: #37B031;
+		border-top-right-radius: 10px;
+		border-bottom-right-radius: 10px;
+		height: 5px;
+	}
+
+	.new_breadcrumb {
+		float: left;
+		font-size: 0.93em;
+		padding: 10px 0 20px;
+	}
+
+	.new_bc_width20 {
+		/*if user picked 3 ins*/
+		width: 20%;
+	}
+
+	#calc_new_bc_loans.new_breadcrumb.new_bc_width20 {
+		margin-left: 12px;
+		width: 18%;
+	}
+
+	#calc_new_bc_5.new_bc_width20 {
+		width: 19%;
+	}
+
+	.new_bc_width25 {
+		/*if user picked 2 ins */
+		width: 25%;
+	}
+
+	.new_bc_width33 {
+		/*if user picked 1 ins */
+		width: 33%;
+	}
+
+	.new_crumb_points {
+		background-image: url("#$(ContentManager:point-undone.png)!");
+		background-position: 50% 0;
+		background-repeat: no-repeat;
+		float: left;
+		position: absolute;
+		top: 17px;
+		height: 11px;
+		width: 11px;
+	}
+
+	.calc_new_actual {
+		font-weight: bold;
+	}
+
+	#calc_new_bc_line .calc_point_1 {
+		left: 11%;
+	}
+
+	#calc_new_bc_line .calc_actual_point {
+		background-image: url("#$(ContentManager:point-actual.png)!");
+		height: 13px;
+		width: 12px;
+	}
+
+	#calc_new_bc_line .calc_done_point {
+		background-image: url("#$(ContentManager:point-done.png)!");
+	}
+
+	#calc_new_bc_line .calc_point_2 {
+		left: 30%;
+	}
+
+	#calc_new_bc_line .calc_point_3 {
+		left: 50%;
+	}
+
+	#calc_new_bc_line .calc_point_4 {
+		left: 70%;
+	}
+
+	#calc_new_bc_line #calc_point_5 {
+		right: 11%;
+		display: block !important;
+	}
+
+	div.calc_first_crumb {
+		text-align: left;
+	}
+
+	div#calc_new_bc_5 {
+		text-align: right;
+	}
+
+	#coverCalculatorSubmit {
+		display: none;
+	}
+
+	.help .arrow-before[data-ng-click^="showCoverCalculator()"] {
+		display: none;
+	}
+
+	/*update 2016-10-15 */
+	#showCoverCalculatorLink {
+		display: none;
+	}
+
+	#calc_new_a2_wrapper {
+		display: none;
+	}
+
+	#calc_new_a2_wrapper.calc_open {
+		display: block;
+	}
+
+	/*end of update*/
+
+	.answer .calc_errorBubble {
+		border: 2px solid #FF5025;
+		padding: 10px 15px;
+		margin-top: 16px;
+		width: 150px;
+	}
+
+	#calc_new_a2_wrapper.calc_open .instruction .inputs.calc_validation_error {
+		border: 2px solid #FF5025 !important;
+		box-shadow: none !important;
+	}
+
+	/*Result cover page*/
+	#calc_new_covers {
+		position: relative;
+		padding-left: 15px;
+	}
+
+	#calc_new_a2_wrapper.calc_open #calc_new_cover_results {
+		display: block;
+		padding: 20px 3% 5px;
+	}
+
+	#calc_new_cover_results #calc_new_cover_header {
+		font-weight: bold;
+		font-size: 1.6em;
+	}
+
+	#calc_new_covers .calc_new_result_boxes {
+		background: #1D478B;
+		background-repeat: no-repeat;
+		background-position: 12px 12px;
+		border-radius: 6px;
+		display: inline-block;
+		height: 90px;
+		margin-right: 2%;
+		margin-top: 20px;
+		margin-bottom: 10px;
+		text-align: left;
+		width: 140px;
+		position: relative;
+		z-index: 0;
+	}
+
+	#calc_new_cover_results #calc_new_mortgage_result {
+		background-image: url("#$(ContentManager:mortgage-results.png)!");
+	}
+
+	#calc_new_cover_results #calc_new_lumpsum_result {
+		background-image: url("#$(ContentManager:dependants-results.png)!");
+	}
+
+	#calc_new_cover_results #calc_new_loans_result {
+		background-image: url("#$(ContentManager:debt-results.png)!");
+	}
+
+	.calc_new_result_boxes .calc_new_result_text {
+		margin-top: 15px;
+		margin-left: 60px;
+		margin-right: 5px;
+		font-size: 0.86em;
+	}
+
+	#calc_new_loans_result .calc_new_result_text {
+		margin-left: 50px;
+		margin-right: 8px;
+	}
+
+	.calc_new_result_boxes .new_result_amount {
+		margin-left: 15px;
+		margin-top: 6px;
+		font-size: 22px;
+		font-weight: bold;
+	}
+
+	.calc_new_plus {
+		background-image: url("#$(ContentManager:plus.png)!");
+		background-repeat: no-repeat;
+		height: 30px;
+		width: 30px;
+		margin: 0 -10px 0 -24px;
+		top: -12px;
+		display: inline-block;
+		position: relative;
+		z-index: 10;
+	}
+
+	/*update 2016-10-04 */
+	#calc_new_existing-cover_result .calc_new_result_text {
+		height: 32px;
+		margin-left: 15px;
+	}
+
+	#calc_new_minus {
+		background-image: url("#$(ContentManager:minus.png)!");
+		background-repeat: no-repeat;
+	}
+
+	/*end of update*/
+
+	.calc_new_total {
+		background-color: #ffffff;
+		border-radius: 6px;
+		color: #1f2a5b;
+		text-align: left;
+		font-weight: 700;
+		margin: 1px auto;
+		width: 605px;
+	}
+
+	.calc_new_total_header {
+		font-size: 1.07em;
+		font-weight: 700;
+		text-align: left;
+		padding-top: 14px;
+		padding-left: 5%;
+		padding-right: 3%;
+	}
+
+	.calc_new_total_amount_box {
+		padding-left: 5%;
+		padding-right: 2%;
+		padding-bottom: 8px;
+		font-size: 36px;
+	}
+
+	.calc_new_13px {
+		font-size: 13px;
+	}
+
+	.new_total_text {
+		font-weight: 300;
+		font-size: 30px;
+	}
+
+	#calc_closeCalculator {
+		font-size: 17px;
+		font-weight: 700;
+		text-decoration: underline;
+		color: #b8eb85;
+		margin-bottom: 20px;
+		margin-top: 5px;
+	}
+
+	span.new_total_pound {
+		letter-spacing: -5px;
+	}
+
+	span.new_result_pound {
+		letter-spacing: -3px;
+	}
+
+	#calc_new_question {
+		font-size: 14px;
+	}
+
+	#calc_new_question span {
+		font-weight: 700;
+	}
+
+	#calc_new_a2_wrapper.calc_open .new-lightbox .lightbox-inner.calc_results {
+		border-bottom: none;
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+	}
+
+	.calc_new_terms_box {
+		padding: 15px 5% 20px;
+		border: 2px solid #88A6D7;
+		border-bottom-left-radius: 6px;
+		border-bottom-right-radius: 6px;
+		border-top: none;
+		font-size: 14px;
+	}
+
+	.calc_new_terms_1 {
+		font-weight: 700;
+		margin-bottom: 25px;
+	}
+
+	.calc_new_highest, .calc_new_lowest {
+		margin: 20px 0 0;
+		text-align: center;
+	}
+
+	@media only screen and (max-width: 1024px) {
+		#calc_new_cover_results .calc_new_total {
+			width: 95%;
+		}
+
+		#calc_new_covers {
+			padding-left: 0;
+		}
+	}
+
+	@media only screen and (max-width: 1000px) {
+		#calc_new_a2_wrapper.calc_open .instruction .inputs {
+			font-size: 1.5em;
+		}
+
+		#calc_new_a2_wrapper.calc_open .legacy .pound {
+			font-size: 1.5em;
+			top: 4px;
+			margin-left: 5px;
+		}
+	}
+
+	@media only screen and (max-width: 850px) {
+		#calc_new_a2_wrapper.calc_open .cover-calculator.ng-scope .instruction .answer {
+			width: 40%;
+		}
+
+		#calc_new_a2_wrapper.calc_open .new-lightbox .question {
+			width: 60%;
+		}
+
+		#calc_new_a2_wrapper.calc_open .instruction .inputs {
+			/*font-size: 1.2em;*/
+		}
+
+		#calc_new_a2_wrapper.calc_open .legacy .pound {
+			/*font-size: 1.2em;
+			top: 1px;
+			margin-left: 5px;*/
+		}
+	}
+
+	@media only screen and (max-width: 705px) and (min-width: 400px) {
+		#calc_new_a2_wrapper {
+			margin-right: 35px;
+		}
+	}
+
+	@media only screen and (max-width: 705px) {
+		#calc_new_a2_wrapper {
+			width: auto;
+		}
+
+		.help-hover .help {
+			z-index: 100;
+		}
+	}
+
+	@media only screen and (max-width: 460px) {
+		#calc_new_a2_wrapper #calc_new_a2_signpost #calc_new_text {
+			line-height: 1.25;
+			margin-right: 30px;
+			margin-top: 10px;
+		}
+
+		.answer .calc_errorBubble {
+			right: 100px;
+		}
+
+		.answer .calc_errorBubble:before, .answer .calc_errorBubble:after {
+			left: 108px;
+		}
+	}
+
+	@media only screen and (max-width: 530px) {
+		.new_breadcrumb {
+			display: none;
+		}
+
+		#calc_new_a2_wrapper #calc_new_breadcrumbs {
+			padding-bottom: 20px;
+		}
+
+		#calc_new_a2_wrapper.calc_open .instruction .inputs {
+			font-size: 1.2em;
+		}
+
+		#calc_new_a2_wrapper.calc_open .legacy .pound {
+			font-size: 1.2em;
+			top: 1px;
+			margin-left: 5px;
+		}
+	}
